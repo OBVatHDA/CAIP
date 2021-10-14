@@ -40,7 +40,7 @@
                             <li>
                                 <a href="Thema_1.html">Thema 1</a>
                             </li>
-                            <!--<li>
+                            <li>
                                 <a href="Thema_2.html">Thema 2</a>
                             </li>
                             <li>
@@ -49,9 +49,9 @@
                             <li>
                                 <a href="Thema_4.html">Thema 4</a>
                             </li>
-							<li>
+							 <li>
                                 <a href="Thema_5.html">Thema 5</a>
-                            </li>
+                            </li><!--
                             <li>
                                 <a href="Klausurvorbereitung.html">Klausurvorbereitung</a>
                             </li>-->
@@ -90,13 +90,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Übungsblatt 1
-                    <small>Thema 1</small>
+                <h1 class="page-header">Übungsblatt 5
+                    <small>Thema 5</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Startseite</a>
                     </li>
-                    <li class="active">Übungsblatt 1</li>
+                    <li class="active">Übungsblatt 5</li>
                 </ol>
             </div>
         </div>
@@ -106,54 +106,48 @@
 		<!-- Intro Content -->
         <div class="row">
             <div class="col-md-6">
-			<h2>Übungsblatt 0</h2>
+			<h2>Übungsblatt 5</h2>
 		<ul>
-		<li> Starten Sie ihre IDE. Erstellen Sie, wie in der Vorlesung gezeigt, ein leeres Projekt und fügen Sie eine 
-			 leere C++-Datei hinzu. 
+		<li>Ändern Sie die Funktion zur Fakultätsberechnung aus Aufgabe 4.2 so, dass bei einem 
+			ungültigen Argument ein <em>domain_error</em> geworfen wird und fangen Sie das
+			domain_error Objekt in der main-Funktion. 
 		</li><p>
-		<li> Geben Sie das „Hello World“ - Programm aus der Vorlesung bzw. dem Skript ein.
+		<li>Schreiben Sie eine Funktion <em>int quadrat(int i)</em>, die das Quadrat von <em>i</em> 
+			berechnet.
+			<br>
+			Schreiben Sie eine <em>main</em>-Funktion, die das Quadrat der Zahlen von 1 bis 100 berechnet 
+			und dazu die Funktion <em>quadrat</em> verwendet. Die Ausgabe soll in zwei Spalten erfolgen: 
+			Spalte 1 enthält die Zahl, Spalte 2 das Quadrat der Zahl. Benutzen sie den Manipulator
+			<em>setw(n)</em>, um die Spaltenbreite der Ausgabe einzustellen.
+			</br>
 		</li></p><p>
-		<li> Übersetzen Sie das Programm, beseitigen Sie mögliche Fehler und starten Sie das Programm.
+		<li>Schreiben Sie eine überladene Funktion quadrat und verwenden Sie nun <em>double</em> 
+			Werte. Verwenden Sie geeignete Manipulatoren, um jeweils Zahl und Quadrat in zwei
+			Spalten mit 5 signifikanten Stellen auszugeben. Erzeugen Sie eine beispielhafte Ausgabe 
+			mit 5 beliebigen Fließkommazahlen.
 		</li></p><p>
-		<li> Erzeugen Sie absichtlich Fehler im Quelltext, indem Sie z.B. ein Semikolon entfernen, übersetzen Sie 
-			 das Programm und versuchen Sie die Fehlermeldungen zu verstehen.
+		<li>Schreiben Sie eine <em>main</em>-Funktion, die das Quadrat der Zahlen von 1 bis 100 berechnet 
+			und dazu eine <em>LUT</em> (Look-Up-Table) verwendet. Die Ausgabe soll in zwei Spalten
+			erfolgen: Spalte 1 enthält die Zahl, Spalte 2 das Quadrat der Zahl. Benutzen sie den 
+			Manipulator setw(n), um die Spaltenbreite der Ausgabe einzustellen.
 		</li></p><p>
-		<li> Erstellen Sie ein neues Projekt und schreiben Sie ein Programm, das folgende Ausgabe erzeugt: 
-			 Dies (“) ist ein Doppelhochkomma, und dies (\) ein backslash
+		<li>Nehmen sie an die folgende Anweisung sei syntaktisch korrekt. Wie lautet dann der Typ 
+			der Funktion <em>f</em>:
+			<br><em>
+			double d = f()[n];
+			</br></em>
 		</li></p><p>
-		<li> Erstellen Sie ein neues Projekt und schreiben Sie ein Programm, das den Quellcode des „Hello 
-			 World!“-Programms selbst als Ausgabe erzeugt.
+		<li>Schreiben Sie ein Programm, das eine beliebige Anzahl von ganzen Zahlen aus dem 
+			Intervall [0, 255] einliest. Geben Sie in Spalte 1 die Zahlen aufsteigend sortiert aus und in 
+			Spalte 2 wie oft die jeweilige Zahl eingegeben wurde.
 		</li></p><p>
+		<li>Ändern Sie die vorherige Ausgabe aus 5.6 wie folgt: Geben Sie anstelle der Anzahl einen Strich 
+			aus, dessen Länge die Anzahl repräsentiert. Zusatzaufgabe: Normieren Sie die 
+			Strichlänge so, dass die größte Anzahl einer Strichlänge von 20 Zeichen entspricht.
+		</li></p>
 		</ul>
 		</div>
-		 <div class="col-md-6">
-		<!-- <h2>Übungsblatt 1</h2>
-		<ul>
-		<li>Sind Sie mit dem letzten Übungsblatt nicht fertig geworden? Dann bearbeiten Sie zuerst die noch 
-			fehlenden Aufgaben des letzten Übungsblattes. 
-			</li><p>
-		<li>Erstellen Sie eine neue Projektmappe für dieses Aufgabenblatt und für jede der folgenden Aufgaben 
-			ein neues Projekt.
-			</li></p><p>
-		<li>Schreiben Sie ein Programm, das einen Namen einliest und als Gruß wieder ausgibt (Kapitel 1.1 im 
-			Skript).
-			</li></p><p>
-		<li>Erweitern Sie das Programm so, dass es Vor- und Nachname einliest und als Gruß wieder ausgibt.
-		</li></p><p>
-		<li> Erweitern Sie das Programm um eigene Ideen, sofern Sie möchten.
-		</li></p><p>
-		<li>Dokumentieren (und verstehen!) Sie <em><strong>alle</strong></em> Zeilen Ihres Programms und diskutieren Sie Ihre 
-			Dokumentation mit ihrem Labornachbarn oder einem Betreuer.
-			</li></p><p>
-		<li>Erweitern Sie das Programm so, dass es einen Rahmen um den Gruß ausgibt (Kapitel 1.2 im Skript).
-		</li></p><p>
-		<li>Schreiben Sie ein Programm das zwei Zahlen einliest und die Summe, die Differenz, das Produkt und 
-			den Quotienten der Zahlen ausgibt. Erstellen Sie eine Version mit Ganzzahltypen (int) und eine
-			Version mit Fließkommatypen (double) . Überlegen Sie sich jeweils welche Ergebnisse Sie 
-			erwarten, bevor Sie das Programm starten. Die Operatoren für die arithmetischen Operationen sind:
-			+, - *, /.
-		</li></p>
-        </div>-->
+		
         <!-- Footer -->
         <footer>
             <div class="row">
